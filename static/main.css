@@ -1,0 +1,352 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    padding: 50px 0 50px 0;
+}
+
+/********** TEXT **********/
+
+p{
+    font-size: 14px;
+    margin-bottom: 0rem;
+}
+
+.font-xl{
+    font-size: 77px;
+}
+
+.font-lg{
+    font-size: 60px;
+}
+
+.font-md{
+    font-size: 30px;
+}
+
+.font-sm{
+    font-size: 22px;
+}
+
+.font-xs{
+    font-size: 18px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.line-height-30{
+    line-height: 30px;
+}
+
+/********** MARGINS / PADDINGS **********/
+.mt-40{
+    margin-top: 40px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-20-negative{
+    margin-bottom: -20px;
+}
+
+.pt-10{
+    padding-top: 10px;
+}
+
+.pb-30{
+    padding-bottom: 30px;
+}
+
+/********** POSITION **********/
+
+.pos-rel{
+    position: relative;
+}
+
+.pos-abs{
+    position: absolute;
+    
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+/********** COLORS **********/
+
+.bg-grey{
+    background-color: #313133;
+}
+
+.text-yellow{
+    color: #ecc511;
+}
+
+.text-black{
+    color: #000;
+}
+
+.text-white{
+    color: #FFF;
+}
+
+/********** LINKS / BUTTONS / INPUTS **********/
+
+.form-input{
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.btn-big{
+    background-color: #7a0202;
+    font-size: 24px;
+    border: none;
+    padding: 10px 28px;
+    color: #fff;
+    opacity: 0.8;
+}
+.btn-big:hover{
+    opacity: 1;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.btn-submit{
+    background-color: #7a0202;
+    color: #fff;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.btn-submit:hover{
+    opacity: 0.8;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.nav-link {
+    display: block;
+    margin: 4px 16px;
+    font-size: 14px;
+}
+  
+nav .nav-link:hover {
+    border-bottom: 3px solid #ecc511;
+    text-decoration: none;
+    color: inherit;
+}
+
+.small-link:hover{
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.6;
+}
+
+/********** HEADER SECTION **********/
+
+.header-logo{
+    margin-left: 50px;
+    height: 45px;
+}
+
+.top-nav{
+    top: 5px;
+    right: 0;
+    margin-right: 5px;
+}
+
+.top-nav .nav-link:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    color: inherit;
+}
+
+.iconify {
+    color: #7a0202;
+    font-size: 18px;
+    margin: 5px;
+}
+
+nav{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+nav .active {
+    border-bottom: 3px solid #ecc511;
+    color: inherit;
+}
+
+.burger-icon{
+    display: none;
+}
+
+/********** SPLASH-IMAGE SECTION **********/
+
+.splash-image{
+    background: #ecc511 url("../images/slider.jpg") left/cover no-repeat;
+}
+
+.splash-text-margin{
+    margin: 100px 0 100px 0;
+}
+
+/********** PRODUCTS SECTION **********/
+
+.product-img{
+    width: 250px;
+    max-width: 100%;
+    margin: 30px 0 15px 0;
+}
+
+.product-link{
+    color: #000;
+}
+
+.product-link:hover{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/********** CONSULTANCY SECTION **********/
+
+.tree-bg-image{
+    background: #FFF url("../images/trae.jpg") center/cover no-repeat;
+}
+
+/********** CHANGE TO BURGER-MENU **********/
+
+@media screen and (max-width: 1200px) {
+
+    /********** HEADER SECTION **********/
+
+    header.container, footer .container{
+        max-width: 100%;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    .burger-icon {
+      display: flex;
+      align-items: center;
+      color: #000;
+      margin-top: 20px;
+    }
+
+    .burger-icon:hover {
+        border: none;
+        text-decoration: none;
+        color: #000;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    nav.responsive a {
+        border-bottom: 3px solid transparent;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }
+
+    nav.responsive a.active {
+        border-bottom: 3px solid transparent;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 3px solid #ecc511;
+    }
+    
+    nav.responsive a:hover {
+        border-color: #ecc511;
+    }
+
+    .header-logo{
+        margin: 30px 25px 30px 25px;
+    }
+  }
+
+  /********** CHANGE TO MOBILE SIZE **********/
+
+  @media screen and (max-width: 575px) {
+
+    /********** TEXT **********/  
+
+    .font-xl{
+        font-size: 40px;
+    }
+    
+    .font-lg{
+        font-size: 30px;
+    }
+
+    .font-md{
+        font-size: 20px;
+    }
+
+    .font-sm{
+        font-size: 18px;
+    }
+
+    .font-xs{
+        font-size: 16px;
+    }
+
+    /********** MARGINS / PADDINGS **********/
+
+    .mb-20-negative{
+        margin-bottom: -10px;
+    }
+
+    /********** BUTTONS / INPUTS **********/
+
+    .btn-big{
+        font-size: 18px;
+    }
+
+    /********** HEADER SECTION **********/
+
+    .iconify.mail, .iconify.phone{
+        display: none;
+    }
+
+    .iconify.fb{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .top-nav .nav-link {
+        font-size: 11px;
+    }
+
+  }

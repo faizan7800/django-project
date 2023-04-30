@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Gem Registration</title>
+    <link rel="stylesheet" href="/static/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/static/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/static/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <style>
+      
+ * {
+    box-sizing: border-box; 
+ }
+      p{
+        margin: 0rem !important;
+      }
+      .p-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav{
+        margin-top: 10px !important;
+        justify-content: center;
+      }
+      h3{
+        margin-bottom: 0px;
+      }
+      .guidelines{
+        border: 1px solid gainsboro;
+        padding: 10px;
+      }
+      .container{
+        margin: 0px auto;
+      }
+      .step-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .step{
+        width: 100%;
+        border: 1px solid gray;
+        padding: 10px;
+        margin: 5px !important;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 15px;
+        font-weight: bold;
+        box-shadow: 2px 4px 3px #bfbab7;
+      }
+      .step i{
+        margin: 0px 4px;
+        color: crimson;
+      }
+      .advantages div{
+        display: flex;
+      }
+      .advantages p{
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .advantages p strong{
+        font-size: 15px;
+      }
+      .border{
+        border: 1px solid gray;
+        padding: 15px;
+        box-shadow: 2px 4px 3px #bfbab7;
+        margin: 0px 2px;
+      }
+
+     .border p{
+      text-align: left;
+      padding: 0.75rem;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+      font-weight: 900;
+     }
+     .border div{
+      margin-bottom: 10px;
+     }
+     .border p i{
+      color: crimson;
+      margin: 0px 4px;
+     }
+    
+
+ h1{
+    margin: 50px 0 30px;
+    text-align: center;
+ }
+
+ .faq-container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.faq{
+    background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.faq.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 
+    6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+    content: '\f075';
+    font-family: 'Font awesome 5 free';
+    color: crimson;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.faq.active::before{
+    color: crimson;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.faq-title{
+    margin: 0 35px 0 0;
+}
+
+.faq-text{
+    display: none;
+    margin: 30px 0 0;
+}
+
+.faq.active .faq-text{
+    display: block;
+}
+
+.faq-toggle{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.faq-toggle:focus{
+    outline: none;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+    display: block;
+    color: white;
+}
+
+.faq.active .faq-toggle .fa-chevron-down{
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background-color: #9fa4a8;
+}
+footer{
+  font-size: 15px;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+  <header class="d-flex flex-column justify-content-between pos-rel">
+    <div class="p-container my-2 ">
+      <div>
+       <p>Help-Desk : +91 - 7996012391 (please prefix +91 before calling)</p>
+       <p>9934602777 /Timing: 10:00 am - 5:00 pm , Mon - Sat</p>
+       </div>
+       <div>
+       <button class="btn btn-submit">
+        Enquiry
+       </button>
+      </div>
+    </div>
+    <div class="text-center my-2">
+      <h3>GEM REGISTRATION PORTAL CONSULTANCY SERVICE</h3>
+      <p>(An Iso certified and approved consultancy organisation.)</p>
+    </div>
+    <nav>
+        <a class="active nav-link" href="">GEM REGISTRATION</a>
+        <a class="nav-link text-black" href="">CANCEL GEM</a>
+        <a class="nav-link text-black" href="">GEM CATALOGUE SERVICES</a>
+        <a class="nav-link text-black" href="">FREQUENTLY ASKED QUESTIONS</a>
+        <a class="nav-link text-black" href="">FILE GRIEVANCE</a>
+        <a class="nav-link text-black" href="">TRACK GRIEVANCE</a>
+        <a class="nav-link text-black" href="">BLOG</a>
+    </nav>
+    <div class="text-center my-2">
+      <h3>Apply For GeM ( Government e-Marketplace ) Registration Consultancy</h3>
+    </div>
+</header>
+
+<div class="row justify-content-center my-2">
+  <div class="col-sm">
+    <div class="text-center btn-submit">
+      <h3>Application Form For GeM Registration Consultancy</h3>
+      <h3>जेम कंसल्टेंसी के लिए पंजीकरण फॉर्म</h3>
+    </div>
+      <form class="mb-20">
+          <input class="form-input" type="text" name="name" placeholder="Name">
+          <input class="form-input" type="text" name="business" placeholder="Business Name">
+          <input class="form-input" type="email" name="email" placeholder="Email">
+          <input class="form-input" type="phone" name="phone" placeholder="Phone"></input>
+          <input class="btn-submit" type="submit" value="SUBMIT">
+      </form>
+  </div>
+  <div class="col-sm">
+    <div class="text-center btn-submit">
+    <h3>Guidelines to Fill GeM Registration Consultancy form</h3>
+    <h3>जेम पोर्टल पर आवेदन करने के लिए दिशानिर्देश</h3>
+  </div>
+  <div class="guidelines">
+    <p> <strong> Name of Authorized Person :</strong> Enter the Name of Owner/ Director/ Authorized Person, strictly as per Aadhaar Card or Pan Card / आधार कार्ड या पैन कार्ड के अनुसार, स्वामी/निदेशक/अधिकृत व्यक्ति का नाम दर्ज करें</p>
+    <p> <strong> Name of Business : </strong>Enter the Name of the Organization/Business, As per Pan Card. / पैन कार्ड के अनुसार संगठन / व्यवसाय का नाम दर्ज करें।</p>
+    <p> <strong> Email ID : </strong>Enter a valid email address of Authorized Person, Our Executive will call to verify Email OTP / अधिकृत व्यक्ति का एक वैध ईमेल पता दर्ज करें, हमारे कार्यकारी ईमेल ओटीपी सत्यापित करने के लिए कॉल करेंगे</p>
+    <p> <strong> Mobile Number :  </strong> Enter valid 10 Digit mobile number of Authorized Person, Our Executive will call to verify mobile OTP. / अधिकृत व्यक्ति का वैध 10 अंकों का मोबाइल नंबर दर्ज करें, हमारे कार्यकारी मोबाइल ओटीपी को सत्यापित करने के लिए कॉल करेंगे।</p>
+  </div>
+
+  </div>
+</div>
+<h3 class="text-center btn-submit py-3">Procedure To Obtain GeM Registration Certificate</h3>
+<div class="d-flex flex-column">
+<div class="step-wrapper">
+<p class="step"> <img src="/static/first.jpg" alt="" width="30"> <i class="fas fa-edit"></i> Fill Application Form with Details</p>
+<p class="step"> <img src="/static/2.jpg" alt="" width="30"> <i class="fas fa-phone-alt"></i> Get Call for Profile & OTP verification</p>
+</div>
+<div class="step-wrapper">
+<p class="step"> <img src="/static/3.jpg" alt="" width="30"> <i class="fas fa-credit-card"></i> Make Online Payment</p>
+<p class="step"> <img src="/static/4.jpg" alt="" width="30"> <i class="fas fa-id-card"></i> Profile & Seller ID Creation</p>
+</div>
+</div>
+<h3 class="text-center btn-submit py-3 my-2">Advantage on GEM Portal as a Seller</h3>
+<div class="advantages">
+  <div>
+<p><strong>National Procurement</strong><span>Access to National Public Procurement market.</span></p>
+<p><strong>Quick Grievance</strong><span>Online grievance redressal mechanism for quick resolution.</span></p>
+</div>
+<div>
+<p><strong>Easy Bidding</strong><span>Easy access to participate in bids/reverse auction.</span></p>
+<p><strong>Clock for RA</strong><span>The clock has been enabled in RA to display the remaining time for seller participation.t</span></p>
+</div>
+<p><strong>Provision for North-East, J & K</strong><span>Seller belonging to North-East states and J & K are exempted from ITR at the time of bid participation.</span></p>
+</div>
+<h3 class="text-center btn-submit py-3 my-2">Documents Required for GeM Registration</h3>
+<div class="d-flex justify-content-between my-3">
+<div class="as-seller border text-center">
+<div>
+<h3 >As Seller</h3>
+</div>
+<p><i class="far fa-check-square"></i> Aadhaar Card of Authorized Person/Proprietor</p>
+<p><i class="far fa-check-square"></i>  Pan Card of Company/Proprietor</p>
+<p><i class="far fa-check-square"></i>Canceled Cheque</p>
+<p><i class="far fa-check-square"></i>  GST Certificate, MSME Certificate, ISO, NSIC, Trade Mark registration(if OEM)</p>
+<p><i class="far fa-check-square"></i> ITR Form of Last 3 Years (not applicable for Proprietor)</p>
+</div>
+<div class="as-buyer border text-center">
+<div>
+<h3 >As Buyer</h3>
+<small >ONLY GOVERNMENT CAN REGISTER AS BUYERS</small>
+</div>
+<p><i class="far fa-check-square"></i> Aadhaar Card of Head of Department, Buyer, Consignee, and PAO</p>
+<p><i class="far fa-check-square"></i> Mobile Numbers of all Users - Must Register with Aadhaar Card</p>
+<p><i class="far fa-check-square"></i>   Email id’s of all Users (can get it from GeM too)</p>
+<p><i class="far fa-check-square"></i> Organization detail like Department Name, Ministry Complete Address with Pin Code, and Landline Number</p>
+
+</div>
+</div>
+<h3 class="text-center btn-submit py-3 my-2">Frequently Asked Questions</h3>
+
+ <div class="faq-container my-3">
+  <div class="faq active">
+      <h3 class="faq-title">1. WHAT IS GEM REGISTRATION?
+      </h3>
+      <p class="faq-text">
+        If anyone wants to be a seller under the gem portal, then they have to register themselves under the gem and this registration is known as a gem registration.
+      </p>
+      <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+      </button>
+  </div>
+
+
+  <div class="faq">
+      <h3 class="faq-title">2. FULL FROM OF GEM?
+      </h3>
+      <p class="faq-text">
+        The full form of GeM is the Government e-marketplace.
+      </p>
+      <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+      </button>
+  </div>
+
+
+  <div class="faq">
+      <h3 class="faq-title">
+        3. HOW MUCH DOES GEM REGISTRATION COST?
+      </h3>
+      <p class="faq-text">
+        if the seller's turnover is less than 1cr, the seller has to pay 5000 rupees caution money and if the turnover is between 1cr and 10 cr, then sellers have to pay 10000 caution money, so basically it depends on the sellers turnover.
+      </p>
+      <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+      </button>
+  </div>
+
+
+  <div class="faq">
+      <h3 class="faq-title">
+       4. WHICH TYPE OF PRODUCTS ARE POPULAR IN THE GOVERNMENT E-MARKETPLACE?
+      </h3>
+      <p class="faq-text">
+        recently furniture, office appliances, and handmade products are the most popular products on the GeM portal.
+      </p>
+      <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+      </button>
+  </div>
+
+
+  <div class="faq">
+      <h3 class="faq-title">
+        5. WHICH TYPE OF DOCUMENTS ARE REQUIRED FOR THE GEM REGISTRATION
+      </h3>
+      <p class="faq-text">
+        PAN card, bank account, residency proof, VAR/TIN number, mobile number, cancel the cheque, MCA registration number, KYC documents (Aadhaar card/ passport/ driving license/voter id), etc.
+      </p>
+      <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+      </button>
+  </div>
+</div>
+</div>
+
+<footer class="text-center btn-submit py-3">
+  <p class="my-2">
+  LAST UPDATED ON: 30/12/2022
+</p>
+<p>
+  © COPYRIGHT GEM PORTAL ONLINE. ALL RIGHTS RESERVED
+</p>
+</footer>
+<script >
+  const buttons = document.querySelectorAll('.faq-toggle');
+
+buttons.forEach((button) =>{
+    button.addEventListener('click', () =>{
+        button.parentNode.classList.toggle('active')
+    })
+})
+
+</script>
+
+</html>
